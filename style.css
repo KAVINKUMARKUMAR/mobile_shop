@@ -1,0 +1,33 @@
+.cart{
+    width: 240px;
+    height: 300px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 6px 6px 5px gray;
+    .cart_box{
+        width: 85%;
+        height: 350px;
+        background-color: aqua;
+        margin-top: 15px;
+    }
+    .card_about{
+        position: relative;
+        bottom: 10px;
+    }
+    .cart_button{
+        padding-bottom: 15px;
+        button{
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            box-shadow: 5px 5px 5px grey;
+            cursor: pointer;
+        }
+    }
+}
