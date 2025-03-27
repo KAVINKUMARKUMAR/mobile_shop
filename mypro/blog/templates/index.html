@@ -1,19 +1,28 @@
 {% extends 'base.html'%}
 {% block content %}
+<ol>
+    {% for product in products %}
+    
+    <li>{{product.name}} - Rs. {{product.price}}</li>
+    
+    {% endfor %}
+</ol>
 <div class="car">
+    {% for product in products %}
     <div class="cart">
         <div class="cart_box">
-            <img src="">
+            <img src="{{product.img.url}}">
         </div>
         <div class="card_title">
-            <h3>headphone</h3>
+            <h3>{{product.name}}</h3>
         </div>
         <div class="card_about">
-            <p>its nice one</p>
+            <p>{{product.price}}</p>
         </div>
         <div class="cart_button">
             <button>add to cart</button>
         </div>
     </div>
+    {% endfor %}
 </div>
 {% endblock %}
